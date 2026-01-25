@@ -8,6 +8,7 @@ export type ProjectCardProps = {
     title: string
     description: string
     imageUrl: string
+    projectUrl: string
     logos: LogoBadge[]
 }
 
@@ -16,22 +17,21 @@ export function ProjectCard({
     description,
     imageUrl,
     logos,
-    children
+    projectUrl
 
-}: {
-    title: string
-    description: string
-    imageUrl: string
-    logos?: LogoBadge[]
-    children?: React.ReactNode
-}) {
+}: ProjectCardProps) {
     return (
-        <div className='
-        flex flex-col-reverse lg:flex-row gap-5 p-5 rounded-lg w-[95%] lg:h-50 hover:bg-accent/80 cursor-pointer
-        '>
-            <div className='lg:w-2/3'>
+        <div
+            onClick={() => window.open(`https://${projectUrl}`, '_blank')}
+            className='
+                flex gap-5 cursor-pointer w-[95%] rounded-lg
+                flex-col-reverse p-0
+                lg:flex-row  lg:p-5  lg:h-65
+              hover:bg-white/5 hover:backdrop-blur-md backdrop-brightness-50 
+            '>
+            <div className='lg:w-2/3 '>
                 <h3 className='font-nunit font-bold mb-3'>{title}</h3>
-                <p className='w-100 2xl:w-150 text-sm text-muted-foreground'>{description}</p>
+                <p className='w-80 lg:w-full font-nunit text-xs 2xl:text-sm text-muted-foreground'>{description}</p>
                 <div className='flex gap-2 flex-wrap mt-5'>
                     {logos && logos.map(l => <IconBadge key={l} variant={l} />)}
                 </div>

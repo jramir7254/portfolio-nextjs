@@ -63,10 +63,7 @@ export default function RootLayout({
                             returnDuration={1.5}
                         />
                     </div>
-
-                    {/* <Header /> */}
                     <main className="min-h-screen relative" >
-
                         {children}
                     </main>
                 </ScrollArea>
