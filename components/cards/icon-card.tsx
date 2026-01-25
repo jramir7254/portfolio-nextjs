@@ -41,3 +41,18 @@ export function IconCard({ children }: { children: React.ReactNode }) {
 
     )
 }
+
+
+{/* <section className="ml-[50vw] min-h-screen grid place-items-center ">
+                <div className="flex items-start  justify-center lg:items-center gap-5">
+                    <IconCard>
+                        <SiReact color="#61DBFB" size={35} className="hover:animate-spin hover:duration-100" />
+                    </IconCard>
+                    <IconCard>
+                        <SiNodedotjs color="#215732" size={35} />
+                    </IconCard>
+                    <IconCard>
+                        <SiMysql size={35} />
+                    </IconCard>
+                </div>
+            </section> */}

@@ -11,18 +11,18 @@ export const projects: ProjectCardProps[] = [
         title: "Nifty Assignment Generator",
         description: "Designed and developed a full-stack platform that dynamically generates computer science assignments using the OpenAI (ChatGPT) API",
         imageUrl: "/nifty-site.png",
-        logos: ['react', 'nodejs', 'tailwind', 'openAi', 'maptiler']
+        logos: ['react', 'nodejs', 'tailwind', 'openAi', 'maptiler', 'googleMaps']
     },
     {
         title: "Secure Coding Game",
         description: "Designed and developed a competitive secure coding platform featuring team-based challenges and scoring",
         imageUrl: "/sc-site.png",
-        logos: ['react', 'nodejs', 'tailwind', 'openAi', 'maptiler']
+        logos: ['react', 'nodejs', 'tailwind', 'sqlite', 'socketIo']
     },
     {
         title: "Phishing Awareness Station",
         description: "Developed an interactive phishing awareness platform to educate users on identifying social engineering attacks",
         imageUrl: "/phish-site.png",
-        logos: ['react', 'nodejs', 'tailwind', 'openAi', 'maptiler']
+        logos: ['react', 'nodejs', 'tailwind', 'sqlite']
     }
 ]

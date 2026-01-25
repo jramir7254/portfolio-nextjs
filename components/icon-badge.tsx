@@ -2,14 +2,17 @@ import React from 'react'
 import { Badge } from './ui/badge'
 import {
     SiReact,
-    SiNextdotjs,
     SiTypescript,
     SiTailwindcss,
     SiNodedotjs,
     SiMysql,
     SiSocketdotio,
     SiOpenai,
-    SiMaptiler
+    SiMaptiler,
+    SiReactrouter,
+    SiCpanel,
+    SiSqlite,
+    SiGooglemaps,
 } from 'react-icons/si';
 
 export const badgeConfigs = {
@@ -45,6 +48,22 @@ export const badgeConfigs = {
         logo: <SiMaptiler />,
         name: "Maptiler"
     },
+    reactRouter: {
+        logo: <SiReactrouter />,
+        name: "React Router"
+    },
+    cPanel: {
+        logo: <SiCpanel />,
+        name: "CPanel"
+    },
+    sqlite: {
+        logo: <SiSqlite />,
+        name: "SQLite"
+    },
+    googleMaps: {
+        logo: <SiGooglemaps />,
+        name: "Google Maps"
+    },
 }
 
 
@@ -53,7 +72,7 @@ export type LogoBadge = keyof typeof badgeConfigs
 
 export function IconBadge({ variant }: { variant: LogoBadge }) {
     return (
-        <Badge variant={'secondary'} className='gap-2 pr-2'>
+        <Badge variant={'secondary'} className='gap-2 pr-2 font-nunit'>
             {badgeConfigs[variant].logo} {badgeConfigs[variant].name}
         </Badge>
     )

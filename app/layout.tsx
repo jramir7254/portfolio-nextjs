@@ -3,6 +3,7 @@ import { Nunito, Montserrat, Bebas_Neue } from "next/font/google";
 import { Header } from "@/components/navigation/header";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import "./globals.css";
+import DotGrid from "@/components/backgrounds/dot-grid";
 
 
 const nunito = Nunito({
@@ -42,12 +43,30 @@ export default function RootLayout({
                     ${montserrat.variable} 
                     ${bebas.variable} 
                     antialiased dark
+                    relative
                     overflow-hidden
+                    h-screen max-w-screen
                 `}
             >
-                <ScrollArea className="h-screen max-w-screen">
+
+                <ScrollArea className="h-screen max-w-screen relative">
+                    <div className="absolute w-full h-full">
+                        <DotGrid
+                            dotSize={5}
+                            gap={15}
+                            baseColor="#271E37"
+                            activeColor="#5227FF"
+                            proximity={120}
+                            shockRadius={250}
+                            shockStrength={5}
+                            resistance={750}
+                            returnDuration={1.5}
+                        />
+                    </div>
+
                     {/* <Header /> */}
-                    <main className="min-h-screen">
+                    <main className="min-h-screen relative" >
+
                         {children}
                     </main>
                 </ScrollArea>
