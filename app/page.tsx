@@ -12,15 +12,24 @@ export default function Home() {
     return (
         <div className=" bg-transparent relative w-full">
 
-            <div className="flex items-center px-10 lg:justify-center lg:fixed w-screen lg:w-1/2 h-screen pointer-events-none ">
+            <div className="flex items-center px-10 lg:justify-center lg:fixed w-screen lg:w-1/2 h-screen  ">
                 <div className="z-99">
                     <h1 className="font-bebas text-8xl lg:text-9xl text-neutral-200  animate-fade-in">
                         Jesus <br />Ramirez
                     </h1>
-                    <p className="font-nunit text-muted-foreground border-l-5 border-neutral-200 pl-2">
+                    <p className="font-nunit text-muted-foreground border-l-5 border-emerald-300 pl-2">
                         Full Stack Software Developer
                     </p>
-                    <div className="flex mt-5 gap-5"><SiLinkedin /> <SiGithub /></div>
+                    <div className="flex mt-5 gap-5">
+                        <a href="https://www.linkedin.com/in/jesus-ramirez-60a450331/" className="hover:text-emerald-300">
+                            <SiLinkedin size={25} />
+                        </a>
+                        <a href="https://github.com/jramir7254" className="hover:text-emerald-300">
+
+                            <SiGithub size={25} />
+                        </a>
+
+                    </div>
                 </div>
             </div>
 

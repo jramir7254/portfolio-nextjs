@@ -53,7 +53,7 @@ export const badgeConfigs = {
         name: "React Router"
     },
     cPanel: {
-        logo: <SiCpanel />,
+        logo: <SiCpanel color='orange' />,
         name: "CPanel"
     },
     sqlite: {
