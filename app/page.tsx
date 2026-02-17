@@ -32,7 +32,6 @@ export default function Home() {
                         <a href="https://www.youtube.com/@chuyouthy" className="hover:text-emerald-300">
                             <SiYoutube size={25} />
                         </a>
-
                     </div>
                 </div>
             </div>
