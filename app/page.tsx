@@ -3,7 +3,7 @@
 import { useIsMobile } from "@/hooks/use-mobile";
 import { ProjectCard } from "@/components/cards/project-card";
 import { projects } from "@/lib/data";
-import { SiLinkedin, SiGithub } from "react-icons/si";
+import { SiLinkedin, SiGithub, SiYoutube } from "react-icons/si";
 
 export default function Home() {
     const isMobile = useIsMobile()
@@ -11,6 +11,8 @@ export default function Home() {
 
     return (
         <div className=" bg-transparent relative w-full">
+
+
 
             <div className="flex items-center px-10 lg:justify-center lg:fixed w-screen lg:w-1/2 h-screen  ">
                 <div className="z-99">
@@ -25,8 +27,10 @@ export default function Home() {
                             <SiLinkedin size={25} />
                         </a>
                         <a href="https://github.com/jramir7254" className="hover:text-emerald-300">
-
                             <SiGithub size={25} />
+                        </a>
+                        <a href="https://www.youtube.com/@chuyouthy" className="hover:text-emerald-300">
+                            <SiYoutube size={25} />
                         </a>
 
                     </div>
@@ -83,12 +87,4 @@ export default function Home() {
 }
 
 
-const contactInfo = {
-    phoneNumber: "(915)222-2914",
-    email: "jramirez7254@gmail.com",
-    epccEmail: "jrami904@epcc.edu",
 
-    seeMore: () => {
-        return 'Visit jesusramirez.dev to learn more about me!'
-    }
-}
