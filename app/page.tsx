@@ -3,7 +3,7 @@
 import { useIsMobile } from "@/hooks/use-mobile";
 import { ProjectCard } from "@/components/cards/project-card";
 import { projects } from "@/lib/data";
-import { SiLinkedin, SiGithub, SiYoutube } from "react-icons/si";
+import { SiLinkedin, SiGithub, SiYoutube, SiHandshake } from "react-icons/si";
 
 export default function Home() {
     const isMobile = useIsMobile()
@@ -29,8 +29,11 @@ export default function Home() {
                         <a href="https://github.com/jramir7254" className="hover:text-emerald-300">
                             <SiGithub size={25} />
                         </a>
-                        <a href="https://www.youtube.com/@chuyouthy" className="hover:text-emerald-300">
+                        <a href="https://youtube.com/@chuyothy?si=t6xWJib-DTLKmM5K" className="hover:text-emerald-300">
                             <SiYoutube size={25} />
+                        </a>
+                        <a href="https://app.joinhandshake.com/profiles/jesusramirez" className="hover:text-emerald-300">
+                            <SiHandshake size={25} />
                         </a>
                     </div>
                 </div>
@@ -39,7 +42,7 @@ export default function Home() {
 
             <section className="lg:ml-[50vw] min-h-screen  lg:pt-[33vh] px-10 lg:px-0">
                 <h2 className="font-nunit font-bold text-2xl mb-5 text-emerald-300">About Me</h2>
-                <div className="flex flex-col items-center justify-center text-muted-foreground w-[90%]">
+                <div className="flex flex-col items-center justify-center text-gray-300 w-[90%]">
                     <p className="mb-5 text-sm lg:text-base">
                         I am deeply passionate about software engineering and continuously invest time in self-directed
                         learning to apply new concepts in real-world projects. Over the past year, I independently taught
@@ -79,6 +82,11 @@ export default function Home() {
                 <div className="space-y-20 lg:space-y-10">
                     {projects.map(p => <ProjectCard key={p.title + " card"} {...p} />)}
                 </div>
+            </section>
+
+            <section className="lg:ml-[50vw] min-h-screen px-10 lg:px-0 pb-50">
+                <h2 className="font-nunit font-bold text-2xl mb-10 text-emerald-300 ">Workshops</h2>
+
             </section>
 
         </div>

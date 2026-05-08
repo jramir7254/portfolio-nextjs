@@ -5,14 +5,14 @@ export const projects: ProjectCardProps[] = [
         title: "ACM Club Website",
         description: "Designed and developed a full-stack event and member management platform for the college ACM chapter with more than 80 members Implemented role-based access control (RBAC) supporting administrators, organizers, and members",
         imageUrl: "/acm-site.png",
-        logos: ['typescript', 'react', 'nodejs', 'tailwind', 'mysql'],
+        logos: ['typescript', 'react', 'nodejs', 'tailwind', 'mysql', 'cPanel', 'express'],
         projectUrl: 'club.epcc.acm.org'
     },
     {
         title: "Nifty Assignment Generator",
         description: "Designed and developed a full-stack platform that dynamically generates computer science assignments using the OpenAI (ChatGPT) API",
         imageUrl: "/nifty-site.png",
-        logos: ['react', 'nodejs', 'tailwind', 'openAi', 'maptiler', 'googleMaps'],
+        logos: ['react', 'next', 'tailwind', 'openAi', 'maptiler', 'googleMaps'],
         projectUrl: 'nifty.epcc.acm.org'
 
     },
@@ -30,6 +30,5 @@ export const projects: ProjectCardProps[] = [
         imageUrl: "/phish-site.png",
         logos: ['react', 'nodejs', 'tailwind', 'sqlite'],
         projectUrl: 'phishing.epcc.acm.org'
-
     }
 ]

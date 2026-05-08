@@ -13,6 +13,8 @@ import {
     SiCpanel,
     SiSqlite,
     SiGooglemaps,
+    SiNextdotjs,
+    SiExpress
 } from 'react-icons/si';
 
 export const badgeConfigs = {
@@ -64,6 +66,14 @@ export const badgeConfigs = {
         logo: <SiGooglemaps />,
         name: "Google Maps"
     },
+    next: {
+        logo: <SiNextdotjs />,
+        name: "NextJS"
+    },
+    express: {
+        logo: <SiExpress />,
+        name: "Express"
+    }
 }
 
 
